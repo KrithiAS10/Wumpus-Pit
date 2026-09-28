@@ -1,0 +1,64 @@
+// let r[0][0] = `<h4>H</h4>`;
+// function bb() {
+//     let result = [];
+//     for (let r = 0; r < 4; r++) {
+//         for (let c = 0; c < 4; c++) {
+//             // result+=`<div class="tiles" style=" background-position: ${-}"></div>`
+//             if (!exceptEL.has(`${r},${c}`)) {
+//                 //     result += `<div class="tiles" style=" background-position: ${-r * 120}px ${-c * 120}px"></div>`
+//                 result.push([r, c]);
+//             }
+
+//         }
+//     }
+//     return result
+// }
+// const positions = bb();
+// let addtiles = "";
+// function displayb() {
+//     for (let r = 0; r < 4; r++) {
+//         for (let c = 0; c < 4; c++) {
+//             addtiles += `<div class="tiles" style="  background-position: ${-r * 123.4}px ${-c * 123.4}px"></div>`
+//         }
+//     }
+//     document.getElementById("board").innerHTML = addtiles;
+// }
+// displayb();
+
+
+// console.log(pAddTiles);
+// function goldgenerate() {
+//     for (let i = 0; i < 1; i++) {
+//         let x = Math.floor(Math.random() * 4); let y = Math.floor(Math.random() * 4);
+//         if (orig[x][y] === "H" || orig[x][y] === "P" || orig[x][y] === "G") {
+//             i--;
+//         }
+//         else {
+//             orig([Math.floor(Math.random() * 4)][Math.floor(Math.random() * 4)] = "G");
+//         }
+//     }
+// }
+// function wumpusgenerate() {
+//     orig[Math.floor(Math.random() * 4)][Math.floor(Math.random() * 4)] = "W";
+// }
+
+// function pitgenerate() {
+//     orig[1][1] = "P";
+//     orig[2][3] = "P";
+//     orig[3][0] = "P";
+// }
+
+
+// console.log(pAddTiles);
+// function goldgenerate() {
+//     if (!pAddTiles.has(`${r},${c}`)) {
+//         orig.push([Math.floor(Math.random() * 4)][Math.floor(Math.random() * 4)] = "G");
+//     }
+// }
+// function wumpusgenerate() {
+//     orig[Math.floor(Math.random() * 4)][Math.floor(Math.random() * 4)] = "W";
+// }
+
+// surround();
+// displayb();
+// info();
