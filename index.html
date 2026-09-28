@@ -9,6 +9,25 @@
 
   <body>
     <!-- <img id="title" src=""> -->
+    <div
+      id="rulesOverlay"
+      class="overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="rulesTitle"
+    >
+      <section class="rulesPanel">
+        <h2 id="rulesTitle">How to Play</h2>
+        <ul>
+          <li>Use the arrow keys to move through the cave.</li>
+          <li>Collect the gold, then return to your starting square to win.</li>
+          <li>A breeze warns of a nearby pit; a stench warns of the Wumpus.</li>
+          <li>Press A to shoot, then enter a direction: U, D, L, or R.</li>
+          <li>A pit or the Wumpus ends the game.</li>
+        </ul>
+        <button id="startGame" type="button">Start Game</button>
+      </section>
+    </div>
     <h1>Wumpus - Pit</h1>
     <div id="main">
       <div id="board"></div>

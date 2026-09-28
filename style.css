@@ -1,82 +1,125 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(27, 0, 33);
-    text-align: center;
-    color: rgb(255, 245, 179);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(27, 0, 33);
+  text-align: center;
+  color: rgb(255, 245, 179);
 }
 
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(8, 5, 12, 0.82);
+}
+
+.overlay[hidden] {
+  display: none;
+}
+
+.rulesPanel {
+  width: min(420px, 100%);
+  padding: 28px;
+  border: 2px solid rgb(255, 245, 179);
+  background: rgb(27, 0, 33);
+  color: rgb(255, 245, 179);
+  text-align: left;
+}
+
+.rulesPanel h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.rulesPanel li {
+  margin: 12px 0;
+}
+
+#startGame {
+  display: block;
+  margin: 24px auto 0;
+  padding: 10px 18px;
+  border: 0;
+  background: rgb(255, 245, 179);
+  color: rgb(27, 0, 33);
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 #board {
-    border: 10px solid rgb(255, 245, 179);
-    width: 500px;
-    height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(0, 0, 0);
+  border: 10px solid rgb(255, 245, 179);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(0, 0, 0);
 }
 
 #main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tiles {
-    width: 123.4px;
-    height: 123.4px;
-    /* background-image: url("10.png"); */
-    border: 1px solid white;
-    background-size: 494px 494px;
-    background-repeat: no-repeat;
+  width: 123.4px;
+  height: 123.4px;
+  /* background-image: url("10.png"); */
+  border: 1px solid white;
+  background-size: 494px 494px;
+  background-repeat: no-repeat;
 }
 
 .tiles h3 {
-    /* position: absolute; */
-    color: white;
-    text-align: center;
-    padding-left: 8%;
-    padding-top: 25%;
+  /* position: absolute; */
+  color: white;
+  text-align: center;
+  padding-left: 8%;
+  padding-top: 25%;
 }
 
 .ptiles {
-    width: 123.4px;
-    height: 123.4px;
-    /* background-image: url("10.png"); */
-    border: 1px solid rgb(188, 26, 26);
-    background-size: 494px 494px;
-    background-repeat: no-repeat;
+  width: 123.4px;
+  height: 123.4px;
+  /* background-image: url("10.png"); */
+  border: 1px solid rgb(188, 26, 26);
+  background-size: 494px 494px;
+  background-repeat: no-repeat;
 }
 
 .ptiles h3 {
-    /* position: absolute; */
-    color: white;
-    text-align: center;
-    padding-left: 8%;
-    padding-top: 25%;
+  /* position: absolute; */
+  color: white;
+  text-align: center;
+  padding-left: 8%;
+  padding-top: 25%;
 }
 
 .gtiles {
-    width: 123.4px;
-    height: 123.4px;
-    /* background-image: url("10.png"); */
-    border: 1px solid rgb(222, 227, 57);
-    background-size: 494px 494px;
-    background-repeat: no-repeat;
+  width: 123.4px;
+  height: 123.4px;
+  /* background-image: url("10.png"); */
+  border: 1px solid rgb(222, 227, 57);
+  background-size: 494px 494px;
+  background-repeat: no-repeat;
 }
 
 .gtiles h3 {
-    /* position: absolute; */
-    color: rgb(248, 238, 41);
-    text-align: center;
-    padding-left: 8%;
-    padding-top: 25%;
+  /* position: absolute; */
+  color: rgb(248, 238, 41);
+  text-align: center;
+  padding-left: 8%;
+  padding-top: 25%;
 }
 
 .biles {
-    width: 123.4px;
-    height: 123.4px;
-    /* background-image: url("10.png"); */
-    border: 1px solid rgb(136, 249, 130);
-    background-size: 494px 494px;
-    background-repeat: no-repeat;
+  width: 123.4px;
+  height: 123.4px;
+  /* background-image: url("10.png"); */
+  border: 1px solid rgb(136, 249, 130);
+  background-size: 494px 494px;
+  background-repeat: no-repeat;
 }
